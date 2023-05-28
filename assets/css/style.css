@@ -1350,7 +1350,7 @@ body {
   .navbar-link > ion-icon { display: none; }
 
   .header { padding-block: 25px; }
-
+/*
   .lang-switch {
     position: relative;
     display: block;
@@ -1363,6 +1363,45 @@ body {
   }
 
   .lang-switch option { color: var(--eerie-black-1); }
+*/
+.dropdown-toggle,
+.dropdown-menu option {
+  width: 90px;
+  align-items: center;
+  text-align: center;
+}
+
+.lang-switch,
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  color: var(--white);
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.dropdown-toggle:hover{   background-color: var(--pistachio);  border: var(--pistachio);  }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  display: none;
+  list-style: none;
+}
+.dropdown-menu option { cursor: pointer;  }
+.dropdown-menu option:hover {
+  background-color: #f2f2f2;
+}
+.active {
+  font-weight: bold;
+  color: var(--pistachio);
+}
+.dropdown:hover .dropdown-menu {  display: block; }
+
+
 
   .navbar {
     all: unset;
